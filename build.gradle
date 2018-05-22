@@ -1,0 +1,19 @@
+plugins {
+    id 'groovy'
+    id 'java'
+}
+
+group 'pl.waw.krakus.test'
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile "org.codehaus.groovy:groovy-all:2.4.13"
+    compile "org.javamoney:moneta:1.1"
+    testCompile "org.spockframework:spock-core:1.1-groovy-2.4"
+}
